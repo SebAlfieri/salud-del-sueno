@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conoce tu sueño | Salud del Sueño</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="cuestionario.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navigation">
+    <a href="index.html" class="brand" aria-label="Inicio">
+      <span class="sun-icon">☀</span>
+      <span class="moon-icon">☾</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="cuestionario.html" class="active">Cuestionario</a>
+      <a href="modulos.html">Aprende</a>
+    </div>
+  </nav>
+</header>
+
+<main class="quiz-page">
+
+  <div class="quiz-heading">
+    <span class="section-label">CONOCE TU SUEÑO</span>
+    <h1>¿Cómo es tu salud del sueño?</h1>
+    <p>
+      Responde las siguientes preguntas sobre tus hábitos
+      de sueño y descubre cuándo podría ser útil hablar
+      con un médico o dentista.
+    </p>
+    <p class="quiz-note">
+      Cuestionario educativo para adultos · Aproximadamente 5–7 minutos
+    </p>
+  </div>
+
+  <form id="sleepQuiz" class="quiz-form">
+
+    <h2 class="quiz-section-title">01 · Calidad del sueño</h2>
+
+    <fieldset class="quiz-question">
+      <legend>1. ¿Cuántas horas duermes normalmente por noche?</legend>
+      <label><input type="radio" name="duracion" value="menos6" required> Menos de 6 horas</label>
+      <label><input type="radio" name="duracion" value="6a7"> Entre 6 y menos de 7 horas</label>
+      <label><input type="radio" name="duracion" value="7a9"> Entre 7 y 9 horas</label>
+      <label><input type="radio" name="duracion" value="mas9"> Más de 9 horas</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>2. ¿Cuánto tiempo tardas normalmente en quedarte dormido?</legend>
+      <label><input type="radio" name="latencia" value="menos15" required> Menos de 15 minutos</label>
+      <label><input type="radio" name="latencia" value="15a30"> Entre 15 y 30 minutos</label>
+      <label><input type="radio" name="latencia" value="31a60"> Entre 31 y 60 minutos</label>
+      <label><input type="radio" name="latencia" value="mas60"> Más de 60 minutos</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>3. ¿Con qué frecuencia te despiertas durante la noche y tienes dificultad para volver a dormir?</legend>
+      <label><input type="radio" name="despertares" value="nunca" required> Nunca o casi nunca</label>
+      <label><input type="radio" name="despertares" value="aveces"> Algunas veces</label>
+      <label><input type="radio" name="despertares" value="frecuente"> Frecuentemente</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>4. ¿Con qué frecuencia te despiertas sintiendo que no has descansado lo suficiente?</legend>
+      <label><input type="radio" name="descanso" value="nunca" required> Nunca o casi nunca</label>
+      <label><input type="radio" name="descanso" value="aveces"> Algunas veces</label>
+      <label><input type="radio" name="descanso" value="frecuente"> Frecuentemente</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>5. ¿Cómo calificarías la calidad general de tu sueño?</legend>
+      <label><input type="radio" name="calidad" value="muybuena" required> Muy buena</label>
+      <label><input type="radio" name="calidad" value="buena"> Buena</label>
+      <label><input type="radio" name="calidad" value="mala"> Mala</label>
+      <label><input type="radio" name="calidad" value="muymala"> Muy mala</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>6. ¿Con qué frecuencia tienes sueño o dificultades para mantenerte despierto durante el día?</legend>
+      <label><input type="radio" name="somnolencia" value="nunca" required> Nunca o casi nunca</label>
+      <label><input type="radio" name="somnolencia" value="aveces"> Algunas veces</label>
+      <label><input type="radio" name="somnolencia" value="frecuente"> Frecuentemente</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>7. ¿Con qué frecuencia utilizas medicamentos o productos para ayudarte a dormir?</legend>
+      <label><input type="radio" name="medicamentos" value="nunca" required> Nunca o casi nunca</label>
+      <label><input type="radio" name="medicamentos" value="aveces"> Algunas veces</label>
+      <label><input type="radio" name="medicamentos" value="frecuente"> Frecuentemente</label>
+    </fieldset>
+
+    <h2 class="quiz-section-title">02 · Respiración durante el sueño</h2>
+
+    <fieldset class="quiz-question">
+      <legend>8. ¿Duermes habitualmente con una pareja o con alguien que pueda observar cómo duermes?</legend>
+      <label><input type="radio" name="pareja" value="si" required> Sí</label>
+      <label><input type="radio" name="pareja" value="no"> No</label>
+      <label><input type="radio" name="pareja" value="aveces"> Algunas veces</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>9. ¿Sabes si roncas mientras duermes?</legend>
+      <label><input type="radio" name="ronquidos" value="si" required> Sí</label>
+      <label><input type="radio" name="ronquidos" value="no"> No</label>
+      <label><input type="radio" name="ronquidos" value="nose"> No lo sé</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>10. ¿Alguien te ha dicho que tus ronquidos son fuertes?</legend>
+      <label><input type="radio" name="ronquidosFuertes" value="si" required> Sí</label>
+      <label><input type="radio" name="ronquidosFuertes" value="no"> No</label>
+      <label><input type="radio" name="ronquidosFuertes" value="nose"> No lo sé</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>11. ¿Tu pareja u otra persona ha notado que dejas de respirar por momentos mientras duermes?</legend>
+      <label><input type="radio" name="pausas" value="si" required> Sí</label>
+      <label><input type="radio" name="pausas" value="no"> No</label>
+      <label><input type="radio" name="pausas" value="nose"> No lo sé</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>12. ¿Alguna vez te despiertas jadeando, ahogándote o sintiendo que te falta el aire?</legend>
+      <label><input type="radio" name="jadeos" value="si" required> Sí</label>
+      <label><input type="radio" name="jadeos" value="no"> No</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>13. ¿Te han diagnosticado presión arterial alta o estás recibiendo tratamiento para controlarla?</legend>
+      <label><input type="radio" name="presion" value="si" required> Sí</label>
+      <label><input type="radio" name="presion" value="no"> No</label>
+      <label><input type="radio" name="presion" value="nose"> No lo sé</label>
+      <label><input type="radio" name="presion" value="omitir"> Prefiero no responder</label>
+    </fieldset>
+
+    <h2 class="quiz-section-title">03 · Salud bucal y bruxismo</h2>
+
+    <fieldset class="quiz-question">
+      <legend>14. ¿Alguien te ha dicho que rechinas los dientes mientras duermes?</legend>
+      <label><input type="radio" name="rechinar" value="si" required> Sí</label>
+      <label><input type="radio" name="rechinar" value="no"> No</label>
+      <label><input type="radio" name="rechinar" value="nose"> No lo sé</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>15. ¿Te despiertas con dolor o cansancio en la mandíbula?</legend>
+      <label><input type="radio" name="mandibula" value="si" required> Sí</label>
+      <label><input type="radio" name="mandibula" value="no"> No</label>
+      <label><input type="radio" name="mandibula" value="aveces"> Algunas veces</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>16. ¿Has notado que aprietas los dientes durante el día o al despertarte?</legend>
+      <label><input type="radio" name="apretar" value="si" required> Sí</label>
+      <label><input type="radio" name="apretar" value="no"> No</label>
+      <label><input type="radio" name="apretar" value="aveces"> Algunas veces</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>17. ¿Algún dentista te ha mencionado que tienes desgaste dental que podría estar relacionado con rechinar o apretar los dientes?</legend>
+      <label><input type="radio" name="desgaste" value="si" required> Sí</label>
+      <label><input type="radio" name="desgaste" value="no"> No</label>
+      <label><input type="radio" name="desgaste" value="nose"> No lo sé</label>
+    </fieldset>
+
+    <h2 class="quiz-section-title">04 · Salud física y emocional</h2>
+    <p class="quiz-section-description">
+      Estas preguntas son opcionales. Puedes seleccionar
+      “Prefiero no responder”.
+    </p>
+
+    <fieldset class="quiz-question">
+      <legend>18. ¿Un profesional de salud te ha diagnosticado alguna enfermedad del corazón?</legend>
+      <label><input type="radio" name="corazon" value="si"> Sí</label>
+      <label><input type="radio" name="corazon" value="no"> No</label>
+      <label><input type="radio" name="corazon" value="omitir"> Prefiero no responder</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>19. ¿Con qué frecuencia has sentido ansiedad, preocupación o nerviosismo que dificultan tu descanso?</legend>
+      <label><input type="radio" name="ansiedad" value="nunca"> Nunca o casi nunca</label>
+      <label><input type="radio" name="ansiedad" value="aveces"> Algunas veces</label>
+      <label><input type="radio" name="ansiedad" value="frecuente"> Frecuentemente</label>
+      <label><input type="radio" name="ansiedad" value="omitir"> Prefiero no responder</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>20. ¿Con qué frecuencia has sentido tristeza, desánimo o falta de interés en actividades que normalmente disfrutas?</legend>
+      <label><input type="radio" name="animo" value="nunca"> Nunca o casi nunca</label>
+      <label><input type="radio" name="animo" value="aveces"> Algunas veces</label>
+      <label><input type="radio" name="animo" value="frecuente"> Frecuentemente</label>
+      <label><input type="radio" name="animo" value="omitir"> Prefiero no responder</label>
+    </fieldset>
+
+    <fieldset class="quiz-question">
+      <legend>21. ¿Sientes que tus problemas de sueño afectan tu trabajo, tus relaciones o tus actividades cotidianas?</legend>
+      <label><input type="radio" name="impacto" value="si"> Sí</label>
+      <label><input type="radio" name="impacto" value="no"> No</label>
+      <label><input type="radio" name="impacto" value="aveces"> Algunas veces</label>
+      <label><input type="radio" name="impacto" value="omitir"> Prefiero no responder</label>
+    </fieldset>
+
+    <button type="submit" class="quiz-submit">
+      Ver mis recomendaciones →
+    </button>
+
+  </form>
+
+  <section id="quizResults" class="quiz-results" hidden tabindex="-1">
+    <span class="section-label">TUS RESULTADOS</span>
+    <h2>Recomendaciones para tu salud del sueño</h2>
+    <p>
+      Según tus respuestas, estas son algunas recomendaciones
+      que podrían ayudarte a cuidar tu salud.
+    </p>
+
+    <div id="recommendations"></div>
+
+    <div class="quiz-next">
+      <a href="modulos.html" class="back-button">
+        Explorar los módulos →
+      </a>
+      <button type="button" id="restartQuiz" class="quiz-restart">
+        Repetir cuestionario
+      </button>
+    </div>
+
+    <p class="quiz-disclaimer">
+      Este cuestionario es educativo y no constituye
+      una evaluación médica ni dental. No diagnostica
+      apnea del sueño, bruxismo ni otras enfermedades.
+    </p>
+  </section>
+
+  <section class="quiz-references">
+    <h2>Referencias científicas</h2>
+    <p>
+      Este cuestionario educativo fue desarrollado por
+      Salud del Sueño. Está inspirado en las dimensiones
+      de calidad del sueño descritas por Buysse y colaboradores,
+      pero no es una versión oficial ni validada del PSQI.
+    </p>
+    <p>
+      Buysse, D. J., et al. (1989).
+      The Pittsburgh Sleep Quality Index: A new instrument
+      for psychiatric practice and research.
+      <em>Psychiatry Research, 28</em>(2), 193–213.
+      <a href="https://doi.org/10.1016/0165-1781(89)90047-4"
+         target="_blank" rel="noopener noreferrer">
+        Ver publicación
+      </a>
+    </p>
+    <p>
+      <a href="https://www.ada.org/resources/ada-library/oral-health-topics/sleep-related-breathing-disorders"
+         target="_blank" rel="noopener noreferrer">
+        American Dental Association: Sleep-Related Breathing Disorders
+      </a>
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Salud del Sueño · Nuevo México</p>
+  <p>Información educativa basada en evidencia científica.</p>
+</footer>
+
+</body>
+</html>

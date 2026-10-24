@@ -1,0 +1,1134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap');
+
+/* General styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FAF9F6;
+  color: #20352F;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation */
+
+.site-header {
+  background: #FAF9F6;
+  border-bottom: 1px solid #EEECE6;
+}
+
+.navigation {
+  max-width: 1300px;
+  margin: auto;
+  padding: 10px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Sun and moon in top-left corner */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.brand .sun-icon,
+.brand .moon-icon {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.sun-icon {
+  color: #F0BD45;
+}
+
+.moon-icon {
+  color: #A7B69B;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-links a {
+  font-size: 15px;
+  color: #465650;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #A78632;
+}
+
+/* Welcome section */
+
+.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 65px 25px 30px;
+  text-align: center;
+}
+
+/* Original Zia logo above title */
+
+.celestial-art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.celestial-art img {
+  width: 170px;
+  height: auto;
+  display: block;
+}
+
+/* Main title */
+
+.hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: clamp(38px, 5.2vw, 70px);
+  line-height: 1.13;
+  letter-spacing: -1.5px;
+  max-width: 1050px;
+  margin: 0 auto 30px;
+  color: #20352F;
+}
+
+/* Mission text */
+
+.hero-description {
+  font-size: clamp(17px, 1.7vw, 22px);
+  line-height: 1.7;
+  color: #4B5B55;
+  max-width: 790px;
+  margin: 0 auto;
+}
+
+/* Two main cards */
+
+.choices {
+  max-width: 1300px;
+  margin: 45px auto 90px;
+  padding: 0 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.choice-card {
+  min-height: 310px;
+  border-radius: 26px;
+  padding: 42px 42px 38px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.choice-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(30, 50, 40, 0.08);
+}
+
+/* Questionnaire card */
+
+.questionnaire {
+  background: #FBF5E5;
+}
+
+.questionnaire .card-symbol {
+  color: #D9A73B;
+}
+
+.questionnaire .card-arrow {
+  background: #F3C65B;
+  color: #20352F;
+}
+
+/* Learning card */
+
+.learning {
+  background: #EAF0E6;
+}
+
+.learning .card-symbol {
+  color: #7D9577;
+}
+
+.learning .card-arrow {
+  background: #809978;
+  color: white;
+}
+
+/* Card typography */
+
+.card-symbol {
+  font-size: 43px;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.card-content {
+  max-width: 410px;
+  padding-right: 45px;
+}
+
+.card-content h2 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: clamp(27px, 3vw, 39px);
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.card-content p {
+  font-size: 17px;
+  line-height: 1.65;
+  color: #475750;
+}
+
+.card-arrow {
+  position: absolute;
+  right: 35px;
+  bottom: 35px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  transition: transform 0.2s;
+}
+
+.choice-card:hover .card-arrow {
+  transform: translateX(5px);
+}
+
+/* Footer */
+
+.site-footer {
+  text-align: center;
+  padding: 35px 20px;
+  border-top: 1px solid #E9E9E2;
+  color: #77827A;
+  font-size: 13px;
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 768px) {
+
+  .navigation {
+    padding: 12px 5%;
+  }
+
+  .brand .sun-icon,
+  .brand .moon-icon {
+    font-size: 30px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 45px 22px 20px;
+  }
+
+  .celestial-art {
+    margin-bottom: 25px;
+  }
+
+  .celestial-art img {
+    width: 170px;
+  }
+
+  .hero h1 {
+    font-size: 39px;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-description {
+    font-size: 17px;
+  }
+
+  .choices {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    margin-top: 35px;
+    gap: 20px;
+  }
+
+  .choice-card {
+    min-height: 280px;
+    padding: 30px;
+  }
+
+  .card-content h2 {
+    font-size: 30px;
+  }
+
+  .card-content p {
+    font-size: 16px;
+  }
+
+  .card-arrow {
+    width: 48px;
+    height: 48px;
+    right: 22px;
+    bottom: 22px;
+  }
+}
+
+/* ===================================
+   EDUCATIONAL MODULES PAGE
+=================================== */
+
+.learning-page {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 75px 6% 110px;
+}
+
+.learning-intro {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 65px;
+}
+
+.section-label {
+  display: inline-block;
+  color: #A78632;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.learning-intro h1,
+.article-heading h1 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: clamp(38px, 5vw, 64px);
+  line-height: 1.15;
+  color: #20352F;
+  margin-bottom: 25px;
+}
+
+.learning-intro p,
+.article-heading p {
+  color: #596760;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.learning-card {
+  display: flex;
+  flex-direction: column;
+  background: #F0F2EA;
+  padding: 35px;
+  border-radius: 24px;
+  min-height: 385px;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.learning-card:nth-child(2) {
+  background: #FBF5E5;
+}
+
+.learning-card:nth-child(3) {
+  background: #E9F0EC;
+}
+
+.learning-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(30, 50, 40, 0.08);
+}
+
+.learning-number {
+  color: #9CA79C;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.learning-icon {
+  font-size: 48px;
+  color: #B59A45;
+  margin: 25px 0 20px;
+  line-height: 1;
+}
+
+.learning-card h2 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.learning-card p {
+  color: #56645D;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.learning-link {
+  margin-top: auto;
+  font-weight: 700;
+  font-size: 15px;
+  color: #567A68;
+}
+
+/* ===================================
+   INDIVIDUAL MODULE PAGES
+=================================== */
+
+.article-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 45px 30px 100px;
+}
+
+.back-link {
+  display: inline-block;
+  color: #567A68;
+  font-weight: 600;
+  margin-bottom: 55px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.article-heading {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 55px;
+}
+
+.infographic {
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.infographic img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 18px;
+}
+
+.infographic figcaption {
+  font-size: 13px;
+  color: #849087;
+  margin-top: 15px;
+}
+
+.article-section {
+  max-width: 790px;
+  margin: 0 auto 55px;
+}
+
+.article-section h2 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 35px;
+  color: #20352F;
+  margin-bottom: 18px;
+}
+
+.article-section p {
+  font-size: 18px;
+  line-height: 1.85;
+  color: #4D5D55;
+  margin-bottom: 20px;
+}
+
+.video-placeholder {
+  background: #EAF0E6;
+  padding: 35px;
+  border-radius: 20px;
+}
+
+.article-bottom {
+  text-align: center;
+  margin-top: 65px;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 15px 28px;
+  border-radius: 12px;
+  background: #809978;
+  color: white;
+  font-weight: 700;
+}
+
+.back-button:hover {
+  background: #20352F;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+  .learning-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .learning-card {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .learning-page {
+    padding: 50px 20px 75px;
+  }
+
+  .learning-intro {
+    margin-bottom: 40px;
+  }
+
+  .learning-intro p,
+  .article-heading p {
+    font-size: 17px;
+  }
+
+  .article-page {
+    padding: 35px 20px 75px;
+  }
+
+  .article-section h2 {
+    font-size: 29px;
+  }
+
+  .article-section p {
+    font-size: 16px;
+  }
+
+  .video-placeholder {
+    padding: 25px;
+  }
+}
+
+/* Breathing video section */
+
+.breathing-section {
+  background: #EAF0E6;
+  padding: 40px;
+  border-radius: 24px;
+  max-width: 900px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 16px;
+  margin: 30px 0 20px;
+  background: #20352F;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.video-caption {
+  font-size: 15px !important;
+  color: #718075 !important;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .breathing-section {
+    padding: 25px 18px;
+  }
+}
+
+/* =====================================
+   SALUD DEL SUEÑO — QUESTIONNAIRE
+===================================== */
+
+.quiz-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 75px 25px 100px;
+}
+
+.quiz-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.quiz-heading h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(38px, 5vw, 62px);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 25px;
+}
+
+.quiz-heading p {
+  font-size: 19px;
+  color: #596760;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.quiz-note {
+  font-size: 14px !important;
+  color: #7D8B80 !important;
+  margin-top: 15px !important;
+}
+
+.quiz-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.quiz-section-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 33px;
+  font-weight: 400;
+  margin: 35px 0 5px;
+}
+
+.quiz-section-description {
+  color: #596760;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.quiz-question {
+  border: none;
+  background: #EAF0E6;
+  border-radius: 22px;
+  padding: 35px;
+  min-width: 0;
+}
+
+.quiz-question:nth-of-type(even) {
+  background: #FBF5E5;
+}
+
+.quiz-question legend {
+  font-family: 'DM Serif Display', serif;
+  font-size: 25px;
+  color: #20352F;
+  line-height: 1.35;
+  padding: 0 8px;
+  max-width: 100%;
+}
+
+.quiz-question label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+  padding: 15px 18px;
+  border: 1px solid #D7DED3;
+  background: rgba(255,255,255,0.65);
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.quiz-question label:hover {
+  background: white;
+}
+
+.quiz-question input {
+  accent-color: #809978;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.quiz-submit {
+  border: none;
+  border-radius: 14px;
+  background: #809978;
+  color: white;
+  padding: 19px 30px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.quiz-submit:hover {
+  background: #20352F;
+}
+
+.quiz-results {
+  background: #F0F2EA;
+  padding: 40px;
+  border-radius: 24px;
+  scroll-margin-top: 30px;
+}
+
+.quiz-results[hidden],
+.quiz-form[hidden] {
+  display: none;
+}
+
+.quiz-results h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.quiz-results > p {
+  color: #596760;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.recommendation-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 18px;
+}
+
+.recommendation-card h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.recommendation-card p {
+  color: #596760;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.recommendation-card a {
+  color: #567A68;
+  font-weight: 700;
+}
+
+.quiz-next {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.quiz-restart {
+  border: 1px solid #809978;
+  background: transparent;
+  color: #567A68;
+  padding: 15px 24px;
+  border-radius: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.quiz-disclaimer {
+  margin-top: 35px;
+  font-size: 13px !important;
+  color: #718075 !important;
+}
+
+.quiz-references {
+  margin-top: 75px;
+  padding-top: 30px;
+  border-top: 1px solid #E0E5DD;
+}
+
+.quiz-references h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.quiz-references p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #718075;
+  margin-bottom: 15px;
+}
+
+.quiz-references a {
+  color: #567A68;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .quiz-page {
+    padding: 45px 18px 75px;
+  }
+
+  .quiz-question {
+    padding: 24px 18px;
+  }
+
+  .quiz-question legend {
+    font-size: 22px;
+  }
+
+  .quiz-question label {
+    font-size: 15px;
+  }
+
+  .quiz-results {
+    padding: 25px 20px;
+  }
+
+  .quiz-results h2 {
+    font-size: 32px;
+  }
+}
+
+/* ADDITIONAL SLEEP STRATEGIES */
+
+.extra-sleep-section {
+  max-width: 1100px;
+  margin: 75px auto 40px;
+  padding: 0 20px;
+  color: #20352F;
+}
+
+.extra-sleep-section h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.extra-sleep-intro {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #596760;
+  margin-bottom: 35px;
+}
+
+.extra-sleep-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  margin: 30px auto 50px;
+}
+
+.quit-resources {
+  background: #EAF0E6;
+  border-radius: 22px;
+  padding: 35px;
+}
+
+.quit-resources h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 29px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.quit-resources > p {
+  color: #596760;
+  line-height: 1.7;
+}
+
+.quit-resource-list {
+  display: grid;
+  gap: 14px;
+  margin: 25px 0;
+}
+
+.quit-resource-list a {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  background: #FAF9F6;
+  border-radius: 13px;
+  padding: 20px;
+  color: #20352F;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.quit-resource-list a:hover {
+  background: white;
+}
+
+.quit-resource-list strong {
+  font-size: 17px;
+}
+
+.quit-resource-list span {
+  font-size: 14px;
+  color: #596760;
+}
+
+.quit-help-line {
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+.quit-help-line a {
+  color: #356B52;
+  font-weight: 700;
+}
+
+.quit-small-note {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #718075;
+}
+
+@media (max-width: 600px) {
+  .extra-sleep-section {
+    padding: 0 12px;
+    margin-top: 50px;
+  }
+
+  .quit-resources {
+    padding: 24px 18px;
+  }
+
+  .extra-sleep-image {
+    border-radius: 10px;
+  }
+}
+
+/* MODULE 03 — ORAL HEALTH INFOGRAPHIC */
+
+.oral-health-figure {
+  margin-top: 50px;
+  margin-bottom: 55px;
+}
+
+.oral-health-figure h2 {
+  font-family: 'DM Serif Display', serif;
+  color: #20352F;
+}
+
+.oral-health-image {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin: 35px auto;
+  border-radius: 18px;
+}
+
+@media (min-width: 1000px) {
+  .oral-health-image {
+    width: min(1200px, 90vw);
+    max-width: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .oral-health-image {
+    border-radius: 10px;
+    margin: 25px auto;
+  }
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+  max-width: 1050px;
+  margin: 100px auto 80px;
+  padding: 0 25px;
+}
+
+.about-section h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #20352F;
+  margin: 15px 0 35px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.about-photo {
+  width: 240px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 18px;
+  flex-shrink: 0;
+}
+
+.about-text h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 29px;
+  font-weight: 400;
+  color: #20352F;
+  margin-bottom: 18px;
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #596760;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 650px) {
+  .about-section {
+    margin: 65px auto;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .about-photo {
+    width: 200px;
+    height: 235px;
+  }
+
+  .about-section h2 {
+    font-size: 34px;
+  }
+}
+
+/* SMALL ABOUT SECTION AT BOTTOM */
+
+.about-section {
+  max-width: 850px;
+  margin: 90px auto 45px;
+  padding: 30px 25px 0;
+  border-top: 1px solid #E0E6DD;
+}
+
+.about-section .section-label {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+
+.about-section h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 10px 0 25px;
+  color: #20352F;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.about-photo {
+  width: 145px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.about-text h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #20352F;
+  margin: 0 0 10px;
+}
+
+.about-text p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #596760;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 650px) {
+  .about-section {
+    margin: 60px auto 35px;
+    padding: 25px 20px 0;
+  }
+
+  .about-content {
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .about-photo {
+    width: 100px;
+    height: 125px;
+  }
+
+  .about-section h2 {
+    font-size: 24px;
+  }
+
+  .about-text h3 {
+    font-size: 18px;
+  }
+
+  .about-text p {
+    font-size: 13px;
+  }
+}
+
